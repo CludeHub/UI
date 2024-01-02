@@ -1,8 +1,9 @@
 # SECRET LIBRARY
 
 # Booting The Library
+```lua
 local sex = loadstring(game:HttpGet('https://raw.githubusercontent.com/3345-c-a-t-s-u-s/Garry-UI/main/source'))()
-
+```
 
 
 # Creating Window
