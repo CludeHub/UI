@@ -10,7 +10,8 @@ local ExampleTab = Window:CreateTab('Tab 1','earth')
 
 # Creating Button
 ExampleTab:CreateButton("Button",function()
-	print('press button')
+	
+ print('press button')
 end)
 
 # Creating Toggle
