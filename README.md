@@ -119,3 +119,7 @@ if val == "" then
 		end
 		game:GetService("Workspace").CurrentCamera.FieldOfView = val -- Set it to the default value (70 is the default FOV)
 ```
+# Destroying the Script
+```lua
+sex:Destroy()
+```
