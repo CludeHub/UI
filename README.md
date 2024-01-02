@@ -9,8 +9,7 @@ local Window = sex:Create('title of the Library','title of game','TEST')
 local ExampleTab = Window:CreateTab('Tab 1','earth')
 
 # Creating Button
-ExampleTab:CreateButton("Button",function()
-	
+ExampleTab:CreateButton("Button",function()	   
  print('press button')
 end)
 
