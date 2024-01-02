@@ -9,12 +9,19 @@ local sex = loadstring(game:HttpGet('https://raw.githubusercontent.com/3345-c-a-
 # Creating Window
 ```lua
 local Window = sex:Create('title of the Library','title of game','TEST')
+
+-- title of The Script
+-- title of the game
+-- title of the unknown
 ```
 
 
 # Creating Tab
 ```lua
 local ExampleTab = Window:CreateTab('Tab 1','earth')
+
+-- make tab title of the tab
+-- name of the earth
 ```
 
 
@@ -23,14 +30,22 @@ local ExampleTab = Window:CreateTab('Tab 1','earth')
 ExampleTab:CreateButton("Button",function()	   
  print('press button')    
 end)
+
+-- name of the button
+-- second function of the button
+-- anything script on function not a toggle
 ```
 
 
-# Creating Toggle
+# Creating CheckBox Toggle
 ```lua
 ExampleTab:CreateToggle("Toggle",false,function(val)     
 	print('toggle',val)     
 end)
+
+-- name of the toggle button
+-- function of the toggle
+-- name String Script not a button script
 ```
 
 
@@ -39,6 +54,10 @@ end)
 ExampleTab:CreateSlider("Slider",1,100,10,function(val)     
 	print('slider',val)     
 end)
+
+-- Name of slider
+-- function of the slider
+-- speed of anything else
 ```
 
 
@@ -53,6 +72,10 @@ ExampleTab:CreateLabel("Label")
 ExampleTab:CreateKeybind("Keybind",Enum.KeyCode.E,function(val)     
 	print('keybind',val)      
 end)
+
+-- title of keybind
+-- Enum the letter of the keyboard
+-- function of the keybind
 ```
 
 
