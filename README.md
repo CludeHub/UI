@@ -108,7 +108,63 @@ Window:CreateButton('ads',false,function(val)
 	end    
 end)
 ```
+# Make a Loader
+```lua
+-- By Paul Paras
+-- loader
+-- Instances:
 
+local cka = Instance.new("ScreenGui")
+local frame = Instance.new("Frame")
+local titler = Instance.new("TextLabel")
+local button = Instance.new("TextButton")
+
+--Properties:
+
+cka.Name = "cka"
+cka.Parent = game.CoreGui
+
+frame.Name = "frame"
+frame.Parent = cka
+frame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+frame.Transparency = 0
+frame.BorderColor3 = Color3.fromRGB(0, 0, 155)
+frame.BorderSizePixel = 3
+frame.Position = UDim2.new(0, 120.746, 0, 0)
+frame.Size = UDim2.new(0, 481, 0, 272)
+
+titler.Name = "titler"
+titler.Parent = frame
+titler.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+titler.BorderColor3 = Color3.fromRGB(255, 0, 0)
+titler.BorderSizePixel = 0
+titler.Size = UDim2.new(0, 481, 0, 40)
+titler.Font = Enum.Font.SourceSans
+titler.Text = "☄️Welcome To CludeHub Script☄️"
+titler.TextColor3 = Color3.fromRGB(255, 255, 255)
+titler.TextSize = 28.000
+
+button.Name = "button"
+button.Parent = frame
+button.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+button.Transparency = 0.1
+button.BorderColor3 = Color3.fromRGB(0, 128, 0)
+button.BorderSizePixel = 0
+button.Position = UDim2.new(0, 154, 0, 134)
+button.Size = UDim2.new(0, 180, 0, 60)
+button.Font = Enum.Font.SourceSans
+button.Text = "Continue"
+button.TextColor3 = Color3.fromRGB(255, 255, 255)
+button.TextSize = 39.000
+button.TextWrapped = true
+
+-- Script
+button.MouseButton1Down:connect(function()
+frame:Destroy()
+-- you script here ↓
+
+end)
+```
 
 # Slider Scripts
 
