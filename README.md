@@ -1,117 +1,116 @@
 # SECRET LIBRARY
-never lose
+your dirty mind its just a gender😡
 
 # Booting The Library
 ```lua
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/GhostDuckyy/UI-Libraries/main/Neverlose/source.lua"))()
+local sex = loadstring(game:HttpGet('https://raw.githubusercontent.com/CludeHub/CludeHub/main/CludeHub'))()
 ```
 
 
 # Creating Window
 ```lua
-local Window = Library:Window({
-    text = "Window"
-})
+local Window = sex:Create('title of the Library','title of game','TEST')
+
+-- title of The Script
+-- title of the game
+-- title of the unknown
 ```
 
 
 # Creating Tab
 ```lua
-local TabSection = Window:TabSection({
-    text = "TabSection"
-})
+local ExampleTab = Window:CreateTab('Tab 1','earth')
+
+-- make tab title of the tab
+-- name of the earth
 ```
 
-# Creating Section
-```lua
-local Section = Tab:Section({
-    text = "Section"
-})
-```
 
 # Creating Button
 ```lua
-Section:Button({
-    text = "Button",
-    callback = function()
-        print("Clicked button")
-    end,
-})
+ExampleTab:CreateButton("Button",function()	   
+ print('press button')    
+end)
+
+-- name of the button
+-- second function of the button
+-- anything script on function not a toggle
 ```
 
 
 # Creating CheckBox Toggle
 ```lua
-Section:Toggle({
-    text = "Toggle",
-    state = false, -- Default boolean
-    callback = function(boolean)
-        print("Toggle current: ",boolean)
-    end
-})
+ExampleTab:CreateToggle("Toggle",false,function(val)     
+	print('toggle',val)     
+end)
+
+-- name of the toggle button
+-- function of the toggle
+-- name String Script not a button script
 ```
 
 
 # Creating Slider
 ```lua
-Section:Slider({
-    text = "Slider",
-    min = 10,
-    max = 100,
-    -- [[Float = 0,]] Idk what it does
-    callback = function(number)
-        print(number)
-    end
-})
+ExampleTab:CreateSlider("Slider",1,100,10,function(val)     
+	print('slider',val)     
+end)
+
+-- Name of slider
+-- function of the slider
+-- speed of anything else
 ```
 
-# Creating dropdown
+
+# Create Label
 ```lua
-Section:Dropdown({
-    text = "Dropdown",
-    list = {"Apple", "Banana","Coconut"},
-    default = "Apple",
-    callback = function(String)
-        print(String)
-    end
-})
+ExampleTab:CreateLabel("Label")
 ```
 
-# Creating textbox
-```lua
-Section:Textbox({
-    text = "Textbox",
-    value = "Default",
-    callback = function(String)
-        print(String)
-    end
-})
-```
-
-# Creating Color Picker
-```lua
-Section:Colorpicker({
-    text = "Colorpicker",
-    color = Color3.new(1,1,1),
-    callback = function(HSV)
-        print(HSV)
-    end
-})
-```
 
 # Creating KeyBind
 ```lua
-Section:Keybind({
-    text = "Keybind",
-    default = Enum.KeyCode.Z,
-    callback = function(defaultBind)
-        print("Triggered keybind")
-        print(defaultBind)
-    end
-})
+ExampleTab:CreateKeybind("Keybind",Enum.KeyCode.E,function(val)     
+	print('keybind',val)      
+end)
+
+-- title of keybind
+-- Enum the letter of the keyboard
+-- function of the keybind
 ```
 
-# Slider or Textbox Scripts
+
+# Creating Window Button Earth
+```lua
+Window:CreateButton('earth',false,function(val)        
+	print('set time')
+	if val then
+		Window:Notify('Time Change','Night',1.5)
+		game:GetService('TweenService'):Create(game:GetService('Lighting'),TweenInfo.new(0.5),{ClockTime = 0}):Play()
+	else
+		Window:Notify('Time Change','Day',1.5)
+		game:GetService('TweenService'):Create(game:GetService('Lighting'),TweenInfo.new(0.5),{ClockTime = 14}):Play()
+	end    
+end)
+```
+
+
+# Creating Window Button ADS
+```lua
+Window:CreateButton('ads',false,function(val)      
+	print('fov change')
+	if val then
+		Window:Notify('FOV Change','120',1)
+		game:GetService('TweenService'):Create(workspace.CurrentCamera,TweenInfo.new(0.5),{FieldOfView = 120}):Play()
+	else
+		Window:Notify('FOV Change','70',1)
+		game:GetService('TweenService'):Create(workspace.CurrentCamera,TweenInfo.new(0.5),{FieldOfView = 70}):Play()
+	end    
+end)
+```
+
+
+# Slider Scripts
 
 
 
