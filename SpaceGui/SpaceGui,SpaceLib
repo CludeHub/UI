@@ -1,1 +1,540 @@
+--[[
+local script
+MakeWindow
+MakeTab
+MakeTab2
+MakeBorder
+MakeTitle
+Title
+MakeBorder2
+Section
+FileTab
+FileTab2
+ButtonFrame
+TextLabel
+TextLabel2
+Tabbutton
+ToggleFrame
+ToggleText
+SectionButton1
+SectionButton2
+SectionToggle1
+SectionToggle2
+SectionToggle3
+SectionPlayer1
+SectionPlayer2
+SectionPlayer3
+SectionPlayer4
+]]
 
+-- Pls if you showcase this script make sure to put credit by CludeHub
+
+local SpaceLib = Instance.new("ScreenGui")
+local MakeWindow = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MakeTab = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local MakeTab2 = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MakeWindow.Name = "MakeWindow"
+MakeWindow.Parent = SpaceLib
+MakeWindow.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+MakeWindow.BorderColor3 = Color3.fromRGB(255, 255, 255)
+MakeWindow.BorderSizePixel = 2
+MakeWindow.Position = UDim2.new(0, 127.7878273899744, 0, 0)
+MakeWindow.Size = UDim2.new(0, 436.2973, 0, 297.3973)
+MakeWindow.Visible = true
+
+UICorner.Parent = MakeWindow
+
+MakeTab.Name = "MakeTab"
+MakeTab.Parent = SpaceLib
+MakeTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MakeTab.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MakeTab.BorderSizePixel = 2
+MakeTab.Position = UDim2.new(0, 132.387, 0, 81)
+MakeTab.Size = UDim2.new(0, 140, 0, 212)
+MakeTab.Visible = true
+
+UICorner_2.Parent = MakeTab
+
+MakeTab2.Name = "MakeTab2"
+MakeTab2.Parent = SpaceLib
+MakeTab2.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+MakeTab2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MakeTab2.BorderSizePixel = 2
+MakeTab2.Position = UDim2.new(0, 134.387, 0, 83)
+MakeTab2.Size = UDim2.new(0, 136, 0, 208)
+MakeTab2.Visible = true
+
+UICorner_3.Parent = MakeTab2
+
+local SpaceLib = Instance.new("ScreenGui")
+local MakeBorder = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MakeTitle = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Title = Instance.new("TextLabel")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MakeBorder.Name = "MakeBorder"
+MakeBorder.Parent = SpaceLib
+MakeBorder.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MakeBorder.Position = UDim2.new(0, 132, 0, 5)
+MakeBorder.Size = UDim2.new(0, 140, 0, 71)
+MakeBorder.Visible = true
+
+UICorner.Parent = MakeBorder
+
+MakeTitle.Name ="MakeTitle"
+MakeTitle.Parent = MakeBorder
+MakeTitle.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+MakeTitle.Position = UDim2.new(0, 2, 0, 3)
+MakeTitle.Size = UDim2.new(0, 136, 0, 65)
+
+UICorner_2.Parent = MakeTitle
+
+Title.Name = "Title"
+Title.Parent = MakeBorder
+Title.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Title.Transparency = 0
+Title.Position = UDim2.new(0, 65, 0, 26)
+Title.Size = UDim2.new(0, 1, 0, 1)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "CludeHub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 25.000
+
+local SpaceLib = Instance.new("ScreenGui")
+local MakeBorder2 = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Section = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MakeBorder2.Name = "MakeBorder2"
+MakeBorder2.Parent = SpaceLib
+MakeBorder2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+MakeBorder2.Position = UDim2.new(0, 283, 0, 5)
+MakeBorder2.Size = UDim2.new(0, 274, 0, 289)
+MakeBorder2.Visible = true
+
+UICorner.Parent = MakeBorder2
+
+Section.Name = "Section"
+Section.Parent = SpaceLib
+Section.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+Section.Position = UDim2.new(0, 287, 0, 8)
+Section.Size = UDim2.new(0, 266, 0, 282)
+Section.Visible = true
+
+UICorner_4.Parent = Section
+
+local SpaceLib = Instance.new("ScreenGui")
+local FileTab = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FileTab.Name = "FileTab"
+FileTab.Parent = SpaceLib
+FileTab.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+FileTab.Position = UDim2.new(0, 564.7878273899744, 0, 0)
+FileTab.Size = UDim2.new(0, 128, 0, 210)
+FileTab.Visible = true
+
+UICorner_5.Parent = FileTab
+
+local SpaceLib = Instance.new("ScreenGui")
+local FileTab2 = Instance.new("Frame")
+local UICorner_6 = Instance.new("UICorner")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+FileTab2.Name = "FileTab2"
+FileTab2.Parent = SpaceLib
+FileTab2.BackgroundColor3 = Color3.fromRGB(30, 33, 36)
+FileTab2.Position = UDim2.new(0, 569, 0, 4)
+FileTab2.Size = UDim2.new(0, 118, 0, 200)
+FileTab2.Visible = true
+
+UICorner_6.Parent = FileTab2
+
+-- TabButtons:
+-- Create TabButtons
+
+local SpaceLib = Instance.new("ScreenGui")
+local ButtonFrame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel2 = Instance.new("TextLabel")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+ButtonFrame.Name = "ButtonFrame"
+ButtonFrame.Parent = SpaceLib
+ButtonFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ButtonFrame.Transparency = 1
+ButtonFrame.Position = UDim2.new(0, 0, 0, 0)
+ButtonFrame.Size = UDim2.new(0, 1, 0, 1)
+ButtonFrame.Visible = true
+
+TextLabel.Name = "TextLabel"
+TextLabel.Parent = MakeTab2
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.Transparency = 0
+TextLabel.Position = UDim2.new(0, 48, 0, 20)
+TextLabel.Size = UDim2.new(0, 1, 0, 1)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = "Main"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 15.000
+MakeTab2.Visible = true
+
+TextLabel2.Name = "TextLabe2"
+TextLabel2.Parent = MakeTab2
+TextLabel2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel2.Transparency = 0
+TextLabel2.Position = UDim2.new(0, 53, 0, 47)
+TextLabel2.Size = UDim2.new(0, 1, 0, 1)
+TextLabel2.Font = Enum.Font.GothamBlack
+TextLabel2.Text = "Player"
+TextLabel2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel2.TextSize = 15.000
+
+-- Create an ImageLabel
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(0, 20, 0, 20)
+imageLabel.Image = "rbxassetid://7743870134" -- Replace with the asset ID of your image
+imageLabel.Parent = MakeTitle
+imageLabel.Transparency = 1.000
+imageLabel.Position = UDim2.new(0, 4, 0, 111)
+
+local imageLabel = Instance.new("ImageLabel")
+imageLabel.Size = UDim2.new(0, 20, 0, 20)
+imageLabel.Image = "rbxassetid://7743870134" -- Replace with the asset ID of your image
+imageLabel.Parent = MakeTitle
+imageLabel.Transparency = 1.000
+imageLabel.Position = UDim2.new(0, 4, 0, 85)
+
+-- Make the tab button
+local SpaceLib = Instance.new("ScreenGui")
+local Tabbutton = Instance.new("Frame")
+local Button1 = Instance.new("TextButton")
+local Button2 = Instance.new("TextButton")
+
+SpaceLib.Parent = game.CoreGui
+SpaceLib.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Tabbutton.Name = "Tabbutton"
+Tabbutton.Parent = SpaceLib 
+Tabbutton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Tabbutton.Transparency = 1
+Tabbutton.Position = UDim2.new(0, 0, 0, 0)
+Tabbutton.Size = UDim2.new(0, 20, 0, 20)
+
+Button1.Name = "Button1"
+Button1.Parent = TextLabel
+Button1.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button1.Transparency = 1
+Button1.Position = UDim2.new(0, -48, 0, -10)
+Button1.Size = UDim2.new(0, 137, 0, 23)
+Button1.Font = Enum.Font.GothamBlack
+Button1.Text = ""
+Button1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button1.TextSize = 10.000
+
+Button2.Name = "Button2"
+Button2.Parent = TextLabel
+Button2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Button2.Transparency = 1
+Button2.Position = UDim2.new(0, -48, 0, 17)
+Button2.Size = UDim2.new(0, 137, 0, 23)
+Button2.Font = Enum.Font.GothamBlack
+Button2.Text = ""
+Button2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button2.TextSize = 10.000
+
+-- Section Buttons
+
+local SectionButton1 = Instance.new("TextButton")
+SectionButton1.Name = "SectionButton1"
+SectionButton1.Parent = Section
+SectionButton1.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+SectionButton1.Position = UDim2.new(0, 0, 0, 7)
+SectionButton1.Size = UDim2.new(0, 266, 0, 25)
+SectionButton1.Font = Enum.Font.GothamBlack
+SectionButton1.Text = "Auto Parry"
+SectionButton1.TextColor3 = Color3.new(255, 255, 255)
+SectionButton1.TextSize = 16.000
+SectionButton1.Visible = true
+
+local UICorner_6 = Instance.new("UICorner")
+UICorner_6.Parent = SectionButton1
+
+local SectionButton2 = Instance.new("TextButton")
+SectionButton2.Name = "SectionButton2"
+SectionButton2.Parent = Section
+SectionButton2.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+SectionButton2.Position = UDim2.new(0, 0, 0, 34)
+SectionButton2.Size = UDim2.new(0, 266, 0, 25)
+SectionButton2.Font = Enum.Font.GothamBlack
+SectionButton2.Text = "Auto Spam"
+SectionButton2.TextColor3 = Color3.new(255, 255, 255)
+SectionButton2.TextSize = 16.000
+SectionButton2.Visible = true
+
+local UICorner_7 = Instance.new("UICorner")
+UICorner_7.Parent = SectionButton2
+
+-- Make toggle script
+
+local ToggleFrame = Instance.new("Frame")
+ToggleFrame.Name = "ToggleFrame"
+ToggleFrame.Parent = Section
+ToggleFrame.BackgroundColor3 = Color3.fromRGB(41, 43, 47)
+ToggleFrame.Position = UDim2.new(0, 0, 0, 61)
+ToggleFrame.Size = UDim2.new(0, 266, 0, 25)
+
+local UICorner_7 = Instance.new("UICorner")
+UICorner_7.Parent = ToggleFrame
+
+local ToggleText = Instance.new("TextLabel")
+ToggleText.Name = "ToggleText"
+ToggleText.Parent = ToggleFrame
+ToggleText.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ToggleText.Transparency = 0
+ToggleText.Position = UDim2.new(0, 43.9, 0, 12.999)
+ToggleText.Size = UDim2.new(0, 1, 0, 1)
+ToggleText.Font = Enum.Font.GothamBlack
+ToggleText.Text = "Lag server"
+ToggleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+ToggleText.TextSize = 16.000
+ToggleText.Visible = true
+
+-- Script for Tabs
+
+Button1.MouseButton1Click:Connect(function()
+                SectionButton1.Visible = true
+                SectionButton2.Visible = true
+                SectionToggle1.Visible = true
+                SectionToggle2.Visible = true
+                SectionToggle3.Visible = true
+                SectionPlayer1.Visible = false
+                 SectionPlayer2.Visible = false
+                 SectionPlayer3.Visible = false
+                 SectionPlayer4.Visible = false
+    end)
+
+Button2.MouseButton1Click:Connect(function()
+                 SectionPlayer1.Visible = true
+                 SectionPlayer2.Visible = true
+                 SectionPlayer3.Visible = true
+                 SectionPlayer4.Visible = true
+                 SectionButton1.Visible = false
+                SectionButton2.Visible = false
+                SectionToggle1.Visible = false
+                SectionToggle2.Visible = false
+                SectionToggle3.Visible = false
+    end)
+
+-- Script for Sections
+
+SectionButton1.MouseButton1Click:Connect(function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/yBawVcE7"))()
+end)
+
+SectionButton2.MouseButton1Click:Connect(function()
+        local function get_plr()
+  return game.Players.LocalPlayer
+end
+
+local function get_plrChar()
+  local plrChar = get_plr().Character
+  if plrChar then
+    return plrChar
+  end
+end
+
+local function get_plrRP()
+  local plrRP = get_plrChar():FindFirstChild("HumanoidRootPart")
+  if plrRP then
+    return plrRP
+  end
+end
+
+local function playerJump()
+  pcall(function()
+    game.Players.LocalPlayer.Character.Humanoid.Jump = true
+  end)
+end
+
+local function get_PlayersNumber()
+  local Alive = workspace:WaitForChild("Alive", 20):GetChildren()
+  local PlayersNumber = 0
+  for _,v in pairs(Alive) do
+    if v and v:FindFirstChild("Humanoid") and v.Humanoid.Health > 50 then
+      PlayersNumber = PlayersNumber + 1
+    end
+  end
+  return PlayersNumber
+end
+
+local function get_ProxyPlayer()
+  local Players = workspace:WaitForChild("Alive"):GetChildren()
+  local Distance = math.huge
+  local plr = game.Players.LocalPlayer
+  local plrRP = plr.Character:FindFirstChild("HumanoidRootPart")
+  local Player = nil
+  
+  for _,plr1 in pairs(Players) do
+    if plr1.Name ~= plr.Name and plrRP and plr1:FindFirstChild("HumanoidRootPart") and plr1:FindFirstChild("Humanoid") and plr1.Humanoid.Health > 50 then
+      local magnitude = (plr1.HumanoidRootPart.Position - plrRP.Position).Magnitude
+      if magnitude <= Distance then
+        Distance = magnitude
+        Player = plr1
+      end
+    end
+  end
+  return Player
+end
+
+local function Click_Button()
+  task.spawn(function()
+    local plr = game.Players.LocalPlayer
+    local plrFind = workspace.Alive:FindFirstChild(plr.Name)
+    if plrFind then
+      local plrs = 0
+      for _,v in pairs(workspace:WaitForChild("Alive", 10):GetChildren()) do
+        plrs = plrs + 1
+      end
+      if plrs > 1 then
+        local args = {[1] = 1.5,[2] = CFrame.new(-254, 112, -119) * CFrame.Angles(-2, 0, 2),[3] = {
+        ["2617721424"] = Vector3.new(-273, -724, -20),
+        },[4] = {[1] = 910,[2] = 154}}
+        game:GetService("ReplicatedStorage").Remotes.ParryAttempt:FireServer(unpack(args))task.wait()
+      end
+    end
+  end)
+end
+
+task.spawn(function()
+  while task.wait() do
+    if getgenv().SpamClickA then
+      Click_Button()
+    end
+  end
+end)
+
+local function DetectSpam()
+  local Balls = workspace:WaitForChild("Balls", 20)
+  
+  local OldPos = Vector3.new()
+  local OldTick1 = tick()
+  
+  local OldBall = Balls
+  local TargetPlayer = ""
+  local SpamNum = 0
+  local BallSpeed = 0
+  local BallDistance = 0
+  
+  task.spawn(function()
+    local OldTick = tick()
+    local OldPos = Vector3.new()
+    while getgenv().DetectSpam do task.wait()
+      local plrRP = get_plrRP()
+      local Ball = Balls:FindFirstChildOfClass("Part")
+      if plrRP and Ball then
+        BallDistance = (plrRP.Position - Ball.Position).Magnitude
+        BallSpeed = (OldPos - Ball.Position).Magnitude
+        if tick() - OldTick >= 1/60 then
+          OldTick = tick()
+          OldPos = Ball.Position
+        end
+      end
+    end
+  end)
+  
+  while getgenv().DetectSpam do task.wait()
+    local Ball = Balls:FindFirstChildOfClass("Part")
+    local plrRP = get_plrRP()
+    local ProxyPlayer = get_ProxyPlayer()
+    
+    if not Ball then
+      getgenv().SpamClickA = false
+    end
+  
+    if Ball and Ball:GetAttribute("realBall") and OldBall ~= Ball then
+    
+      Ball.Changed:Connect(function()task.wait()
+        local Ball = Balls:FindFirstChildOfClass("Part")
+        
+        if Ball then
+          TargetPlayer = Ball:GetAttribute("target")
+          
+          if ProxyPlayer and TargetPlayer == ProxyPlayer.Name or get_plr() and TargetPlayer == get_plr().Name then
+            SpamNum = SpamNum + 1
+          else
+            SpamNum = 0
+          end
+          
+          local args = ProxyPlayer and ProxyPlayer:FindFirstChild("HumanoidRootPart")
+          local HL1 = ProxyPlayer and ProxyPlayer:FindFirstChild("Highlight")
+          local HL2 = get_plrChar() and get_plrChar():FindFirstChild("Highlight")
+          
+          if plrRP and HL1 and args or plrRP and HL2 and args then
+            local DistancePlayer = (ProxyPlayer.HumanoidRootPart.Position - plrRP.Position).Magnitude
+            local DistanceBall = (Ball.Position - plrRP.Position).Magnitude
+            
+            if get_PlayersNumber() < 3 then
+              if DistancePlayer <= 40 and DistanceBall <= 35 and SpamNum >= 2 then
+                getgenv().SpamClickA = true
+              else
+                getgenv().SpamClickA = false
+              end
+            else
+              if DistancePlayer <= 30 and DistanceBall <= 35 and SpamNum >= 3 then
+                getgenv().SpamClickA = true
+              else
+                getgenv().SpamClickA = false
+              end
+            end
+          else
+            getgenv().SpamClickA = false
+          end
+        end
+      end)
+      OldBall = Ball
+    end
+  end
+end
+
+getgenv().DetectSpam = true
+DetectSpam()
+end)
+wait(6)
+MakeWindow:Destroy()
+MakeTab:Destroy()
+MakeTab2:Destroy()
+MakeBorder:Destroy()
+MakeTitle:Destroy()
+Title:Destroy()
+MakeBorder2:Destroy()
+Section:Destroy()
+FileTab:Destroy()
+FileTab2:Destroy()
+ButtonFrame:Destroy()
+TextLabel:Destroy()
+TextLabel2:Destroy()
+Tabbutton:Destroy()
+ToggleFrame:Destroy()
