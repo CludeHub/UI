@@ -1,5 +1,7 @@
 local Activity = loadstring(game:HttpGet("https://raw.githubusercontent.com/CludeHub/UI/main/Activity"))()
+
 -- Pls if you showcase this script make sure to put credit by CludeHub
+
 local SpaceLib = Instance.new("ScreenGui")
 local MakeWindow = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
