@@ -15,38 +15,38 @@ local KillingCheats = PhantomForcesWindow:NewSection("Kill Options")
 # make button
 ```lua
 KillingCheats:CreateButton("Button", function()
-print("HI")
-end)
+         print("HI")
+     end)
 ```
 # make textbox
 ```lua
 KillingCheats:CreateTextbox("TextBox", function(text)
-        print(text)
-end)
+         print(text)
+     end)
 ```
 # Make Toggle 
 ```lua
 KillingCheats:CreateToggle("Auto Ez", function(value)
-print(value)
-end)
+         print(value)
+     end)
 ```
 # Make Dropdown
 ```lua
 KillingCheats:CreateDropdown("DropDown", {"Hello", "World", "Hello World"}, 2, function(text)
-print(text)
-end)
+         print(text)
+     end)
 ```
 # Create slider
 ```lua
 KillingCheats:CreateSlider("Slider", 0, 100, 15, false, function(value)
-print(value)
- end)
+         print(value)
+     end)
 ```
 # Crete Color picker
 ```lua
 KillingCheats:CreateColorPicker("Picker", Color3.new(255, 255, 255), function(value)
-print(value)
-end)
+         print(value)
+     end)
 ```
 
 
