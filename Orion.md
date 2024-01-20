@@ -106,7 +106,8 @@ Tab:AddDropdown({
 	Callback = function(Value)
 		print(Value)
 	end    
-})```
+})
+```
 # Finishing the Library
 ```lua
 OrionLib:Init()
