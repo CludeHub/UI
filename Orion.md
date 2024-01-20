@@ -1,5 +1,5 @@
 # Booting Library
-```java
+```typescript
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 ```
 # Make Window
@@ -114,4 +114,35 @@ OrionLib:Init()
 # destroying the interface 
 ```lua
 OrionLib:Destroy()
+```
+
+
+# Set Speed Script
+```lua
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = val
+```
+
+
+# Set Jump Power Script
+```lua
+game.Players.LocalPlayer.Character.Humanoid.JumpPower = val
+```
+
+
+# Set Gravity Script
+```lua
+if val == "" then   
+	val = "200"   
+	else  
+	game.Workspace.Gravity = val  
+	end 
+```
+
+
+# Set Fov Script
+```lua
+if val == "" then
+		val = "70"
+		end
+		game:GetService("Workspace").CurrentCamera.FieldOfView = val -- Set it to the default value (70 is the default FOV)
 ```
