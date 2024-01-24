@@ -14,6 +14,12 @@ local Tab = Window:MakeTab({
 	PremiumOnly = false
 })
 ```
+# Make Section
+```lua
+local Section = Tab:AddSection({
+	Name = "Section"
+})
+```
 # Notification
 ```lua
 OrionLib:MakeNotification({
